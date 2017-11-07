@@ -1,4 +1,3 @@
-
 function notelistStoresNoteInList() {
   var notelist = new Notelist();
   notelist.saveNoteToList('hi', 'this is a test');
@@ -7,12 +6,3 @@ function notelistStoresNoteInList() {
 }
 
 notelistStoresNoteInList();
-
-function showsNoteList() {
-  var notelist = new Notelist();
-  notelist.saveNoteToList('hi', 'this is a test');
-  notelist.saveNoteToList('test', 'this is another test');
-  assert.toContain(notelist.showAllNotes(), "hi: this is a test,test: this is another test");
-}
-
-showsNoteList();
