@@ -1,4 +1,4 @@
-// var note = require('./note-model.js');
+
 
 function noteInstantiatesWithTextProperty() {
   var note = new Note('Hi');

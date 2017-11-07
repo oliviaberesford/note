@@ -9,7 +9,9 @@
 function notelistStoresNoteInList() {
   var notelist = new Notelist();
   notelist.saveNoteToList('hi');
-  assert.toContain(note._list == 'hi');
+  // console.log(notelist.list);
+  // console.log(notelist.showAllNotes());
+  assert.toContain(notelist.showAllNotes(), 'hi');
 }
 
 notelistStoresNoteInList();

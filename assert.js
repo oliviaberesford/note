@@ -10,8 +10,8 @@ var assert = {
     }
   },
 
-  toContain: function(array, objectToCheckFor) {
-    if (array.includes(objectToCheckFor) == false) {
+  toContain: function(arr, objectToCheckFor) {
+    if (arr.includes(objectToCheckFor) == false) {
       throw new Error("Assertion failed: " + array + " doesn't include " + objectToCheckFor);
     }
   }

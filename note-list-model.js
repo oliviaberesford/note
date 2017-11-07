@@ -1,18 +1,18 @@
 (function(exports){
   function Notelist() {
-  this._list = [];
+  this.list = [];
 }
 
 Notelist.prototype.saveNoteToList = function(text) {
   note = new Note(text);
-  this._list.push(note);
+  this.list.push(note);
 };
-//
-// Notelist.prototype.showAllNotes = function() {
-//   this.list.forEach(function(note) {
-//     return note;
-//   });
-// };
 
+Notelist.prototype.showAllNotes = function() {
+  this.list.forEach(function(note) {
+    // return note;
+    console.log(note);
+  });
+};
 exports.Notelist = Notelist;
 })(this);
