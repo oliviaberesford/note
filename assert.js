@@ -6,7 +6,7 @@ var assert = {
   },
   toEqual: function(leftsideassertion, assertionToCheck) {
     if (assertionToCheck !== leftsideassertion) {
-      throw new Error("Assertion failed: " + leftsideassertion + " is not equal to" + assertionToCheck);
+      throw new Error("Assertion failed: " + leftsideassertion + " is not equal to " + assertionToCheck);
     }
   },
 

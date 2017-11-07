@@ -3,16 +3,17 @@
   this.list = [];
 }
 
-Notelist.prototype.saveNoteToList = function(text) {
-  note = new Note(text);
-  this.list.push(note);
+Notelist.prototype.saveNoteToList = function(title, text) {
+  note = new Note(title, text);
+  this.list.push(title + ': ' + text);
 };
 
 Notelist.prototype.showAllNotes = function() {
-  this.list.forEach(function(note) {
+    // this.list.forEach(function(note) {
     // return note;
-    console.log(note);
-  });
+    return this.list;
+  // });
 };
+
 exports.Notelist = Notelist;
 })(this);

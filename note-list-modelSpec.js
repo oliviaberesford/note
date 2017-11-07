@@ -1,24 +1,10 @@
-// function noteListInstantiatesWithListProperty() {
-//   var notelist = new Notelist();
-//   console.log(notelist._list);
-//   assert.toEqual(notelist._list, []);
-// }
-//
-// noteListInstantiatesWithListProperty();
-//
+
 function notelistStoresNoteInList() {
   var notelist = new Notelist();
-  notelist.saveNoteToList('hi');
-  // console.log(notelist.list);
-  // console.log(notelist.showAllNotes());
-  assert.toContain(notelist.showAllNotes(), 'hi');
+  notelist.saveNoteToList('hi', 'this is a test');
+  notelist.saveNoteToList('hi', 'this is another test');
+  console.log(notelist.showAllNotes());
+  assert.toContain(notelist.showAllNotes(), 'hi: this is a test');
 }
 
 notelistStoresNoteInList();
-//
-// function noteListshowsList() {
-//   var note = new Note('Hi');
-//   assert.toEqual(note.showtext(), 'Hi');
-// }
-//
-// noteListshowsList();
