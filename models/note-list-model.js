@@ -1,7 +1,6 @@
 (function(exports) {
   function Notelist() {
     this.list = [];
-
   }
 
   Notelist.prototype.saveNoteToList = function(title, text) {
