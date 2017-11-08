@@ -5,17 +5,12 @@
   }
 
   NotelistView.prototype.showAllNotes = function() {
-
-var self = this;
+    var self = this;
     this.noteList.list.forEach(function(note) {
-
       self.result.push(note.title + ': ' + note.text);
-
     });
-
- return this.result;
+    return this.result;
   };
 
   exports.NotelistView = NotelistView;
-
 })(this);
