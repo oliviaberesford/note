@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>title</title>
-  </head>
-  <body>
-    <div id="app">
-      hello
-    </div>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Notepad</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <script src="./models/note-model.js"></script>
+  <script src="./models/note-list-model.js"></script>
+  <script src="./models/note-list-view.js"></script>
   <script src="./models/note-controller.js"></script>
+</head>
+
+<body>
+  <div class="left-panel">
+    <h1>Create your note :</h1>
+    <form id='create-note'>
+      <div>
+        </div>
+        <div>
+        <input id='note-title' type='text' maxlength='20' placeholder="give it a title..."></input>
+        </div>
+      <div>
+        <input id='note-text' textareatype='text' placeholder="write your note..."></input>
+        <button id='saveNote' type='button'>save note</button>
+      </div>
+    </form>
+  </div>
+  <div class="main-content">
+    <div class="lines"></div>
+    <h2>Your notes:</h2>
+    <ul class="list">
+      <li><p id='list-of-notes'></p></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li>notes will look like this</li>
+    </ul>
+  </div>
+  <div id="clearingdiv"></div>
+  <div id="selected-note">
+  </div>
+</body>
+
 </html>
