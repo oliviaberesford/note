@@ -1,7 +1,8 @@
 window.onload = function() {
-  // var element = document.getElementById("app").innerHTML = 'Howdy';
+  //  var element = document.getElementById("app").innerHTML = 'Howdy';
   // console.log(element);
   (function(exports) {
+
     function NoteController() {
       this.view = new NotelistView();
     }
@@ -34,5 +35,4 @@ window.onload = function() {
       control.listener();
 
   })(this);
-
 };

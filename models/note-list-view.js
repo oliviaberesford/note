@@ -1,12 +1,12 @@
 (function(exports) {
   function NotelistView() {
-    this.noteList = new Notelist();
+    this.notelist = new Notelist();
     this.result = [];
   }
 
   NotelistView.prototype.showAllNotes = function() {
     var self = this;
-    this.noteList.list.forEach(function(note) {
+    this.notelist.list.forEach(function(note) {
       self.result.push(note.title + ': ' + note.text);
     });
     return this.result;
